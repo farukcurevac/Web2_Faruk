@@ -1,0 +1,525 @@
+<section id="home">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- Banner -->
+  <div class="banner" id="home">
+    <div class="layer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 banner-text-w3ls">
+            <!-- banner slider-->
+            <div class="csslider infinity" id="slider1">
+              <input
+                type="radio"
+                name="slides"
+                checked="checked"
+                id="slides_1"
+              />
+              <input type="radio" name="slides" id="slides_2" />
+              <input type="radio" name="slides" id="slides_3" />
+              <ul class="banner_slide_bg">
+                <li>
+                  <div class="container-fluid">
+                    <div class="w3ls_banner_txt">
+                      <h3 class="b-w3ltxt text-capitalize mt-md-4">Sarajevo</h3>
+                      <h4><span class="aria-hidden"></span>from</h4>
+                      <p>
+                        <span class="fa fa-usd" aria-hidden="true"></span>400
+                      </p>
+                      <p></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="container-fluid">
+                    <div class="w3ls_banner_txt">
+                      <h3 class="b-w3ltxt text-capitalize mt-md-4">Zagreb</h3>
+                      <h4><span class="aria-hidden"></span>from</h4>
+                      <p>
+                        <span class="fa fa-usd" aria-hidden="true"></span>100
+                      </p>
+                      <p></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="container-fluid">
+                    <div class="w3ls_banner_txt">
+                      <h3 class="b-w3ltxt text-capitalize mt-md-4">Belgrade</h3>
+                      <h4><span class="aria-hidden"></span>from</h4>
+                      <p>
+                        <span class="fa fa-usd" aria-hidden="true"></span>100
+                      </p>
+                      <p></p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="navigation">
+                <div>
+                  <label for="slides_1"></label>
+                  <label for="slides_2"></label>
+                  <label for="slides_3"></label>
+                </div>
+              </div>
+            </div>
+            <!-- //banner slider-->
+          </div>
+          <div class="col-md-6 px-lg-3 px-0">
+            <div class="banner-form-w3 ml-lg-5">
+              <div class="padding">
+                <form action="#" method="post">
+                  <h5 class="mb-3">Search Our Tours</h5>
+                  <div class="form-style-w3layout">
+                    <input
+                      placeholder="Search Location"
+                      name="name"
+                      type="text"
+                      required=""
+                    />
+                    <input
+                      placeholder="Price Range"
+                      name="name"
+                      type="text"
+                      required=""
+                    />
+                    <button class="btn">Search</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="some-content py-5" id="about">
+    <div class="container py-md-5">
+      <div class="row about-vv-top mt-2">
+        <div class="col-lg-6 about-info">
+          <h4 class="title-hny mb-md-5">About us</h4>
+          <p>
+            Welcome to Faruk Travels, your trusted travel agency dedicated to
+            creating unforgettable journeys. Whether you seek adventure,
+            relaxation, or cultural exploration, we craft personalized travel
+            experiences tailored to your dreams. With expert guidance, seamless
+            bookings, and exclusive deals, we make traveling effortless and
+            enjoyable. Let us take you on a journey beyond borders—because every
+            trip should be extraordinary! 🌍✈️
+          </p>
+          <div class="read-more-button mt-4">
+            <a href="index.html" class="read-more btn">Read More </a>
+          </div>
+        </div>
+        <div class="col-lg-6 about-img mt-md-4 mt-sm-4">
+          <img src="images/ab1.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services py-5" id="services">
+    <div class="container py-md-5">
+      <h3 class="heading text-center mb-3 mb-sm-5">Our services</h3>
+      <div class="row service-grid-grids text-center">
+        <div class="col-lg-4 col-md-6 service-grid service-grid1 mb-4">
+          <div class="service-icon">
+            <span class="fa fa-h-square"></span>
+          </div>
+          <h4 class="mt-3">Best hotels</h4>
+          <p class="mt-3">
+            We offer top-rated hotels, from luxury resorts to budget stays, with
+            great service, modern amenities, and prime locations. Book now for a
+            perfect getaway! 🏨✨
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 service-grid service-grid2 mb-4">
+          <div class="service-icon">
+            <span class="fa fa-glide-g"></span>
+          </div>
+          <h4 class="mt-3">Tourist guide</h4>
+          <p class="mt-3">
+            Our expert tourist guides ensure an unforgettable experience with
+            in-depth knowledge, personalized tours, and local insights. Discover
+            hidden gems and iconic sights with us! 🌍✨
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 service-grid service-grid3 mb-4">
+          <div class="service-icon">
+            <span class="fa fa-fighter-jet"></span>
+          </div>
+          <h4 class="mt-3">Flight tickets</h4>
+          <p class="mt-3">
+            We offer affordable flight tickets with top airlines, flexible
+            booking options, and great deals. Travel hassle-free with us! ✈️✨
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 p-md-0 mb-4">
+          <div class="bg-image-left">
+            <h4>Canada Tours</h4>
+          </div>
+        </div>
+        <div class="col-md-6 p-md-0 mb-4">
+          <div class="bg-image-right">
+            <h4>Asia Tours</h4>
+          </div>
+          <div class="row">
+            <div class="col-md-6 pr-md-0">
+              <div class="bg-image-bottom1">
+                <h4>Europe Tours</h4>
+              </div>
+            </div>
+            <div class="col-md-6 pl-md-0">
+              <div class="bg-image-bottom2">
+                <h4>Canada Tours</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats" id="stats">
+    <div class="layer py-md-5 py-5">
+      <div class="container py-lg-5 py-md-3">
+        <div class="row stat-grids">
+          <div class="col-lg-6 stats-left">
+            <h3 class="heading mb-4 text-li">Years in the field</h3>
+            <p class="mb-3">
+              "Seasoned professional with 15 years of experience in the travel
+              industry, specializing in tour planning, destination management,
+              and customer experience. Passionate about delivering unforgettable
+              travel experiences through strategic planning and industry
+              insights."
+            </p>
+            <h4><span>15+</span> Years of Experience</h4>
+          </div>
+          <div class="col-lg-6 grid1 stats-right mt-lg-0 mt-4 pl-5">
+            <div class="row">
+              <div class="col-sm-4 col-6 mb-4">
+                <p class="text-li">Travel joy</p>
+                <h4 class="text-wh">12k</h4>
+                <span class="fa fa-users mr-2"></span>
+              </div>
+              <div class="col-sm-4 col-6 mb-4">
+                <p>world tours</p>
+                <h4>15k</h4>
+                <span class="fa fa-tasks mr-2"></span>
+              </div>
+              <div class="col-sm-4 col-6 mb-4">
+                <p>city tours</p>
+                <h4>25k</h4>
+                <span class="fa fa-files-o mr-2"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery py-5" id="gallery">
+    <div class="container py-md-5">
+      <div class="header mb-3 mb-sm-5 text-center">
+        <h3 class="heading text-center mb-3 mb-sm-5">Tour Gallery</h3>
+        <div class="row news-grids text-center">
+          <div class="col-md-4 gal-img">
+            <a href="#gal1"
+              ><img
+                src="images/g1.jpg"
+                alt="news image"
+                class="img-fluid"
+              /><span> HoneyMoon</span></a
+            >
+            <a href="#gal2"
+              ><img
+                src="images/g2.jpg"
+                alt="news image"
+                class="img-fluid"
+              /><span>Family</span></a
+            >
+          </div>
+
+          <div class="col-md-4 gal-img">
+            <a href="#gal3"
+              ><img
+                src="images/g3.jpg"
+                alt="news image"
+                class="img-fluid"
+              /><span>Holidays</span></a
+            >
+
+            <a href="#gal4"
+              ><img
+                src="images/g4.jpg"
+                alt="news image"
+                class="img-fluid"
+              /><span>Adventure</span></a
+            >
+          </div>
+          <div class="col-md-4 gal-img">
+            <a href="#gal5"
+              ><img
+                src="images/g5.jpg"
+                alt="news image"
+                class="img-fluid"
+              /><span>Luxury</span></a
+            >
+            <a href="#gal6"
+              ><img
+                src="images/g6.jpg"
+                alt="news image"
+                class="img-fluid"
+              /><span>Romantic</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- popup-->
+      <div id="gal1" class="pop-overlay animate">
+        <div class="popup">
+          <img src="images/g1.jpg" alt="Popup Image" class="img-fluid" />
+          <p class="mt-4">
+            Nulla viverra pharetra se, eget pulvinar neque pharetra ac int.
+            placerat placerat dolor.
+          </p>
+          <a class="close" href="#gallery">&times;</a>
+        </div>
+      </div>
+      <!-- //popup -->
+
+      <!-- popup-->
+      <div id="gal2" class="pop-overlay animate">
+        <div class="popup">
+          <img src="images/g2.jpg" alt="Popup Image" class="img-fluid" />
+          <p class="mt-4">
+            Nulla viverra pharetra se, eget pulvinar neque pharetra ac int.
+            placerat placerat dolor.
+          </p>
+          <a class="close" href="#gallery">&times;</a>
+        </div>
+      </div>
+      <!-- //popup -->
+      <!-- popup-->
+      <div id="gal3" class="pop-overlay animate">
+        <div class="popup">
+          <img src="images/g3.jpg" alt="Popup Image" class="img-fluid" />
+          <p class="mt-4">
+            Nulla viverra pharetra se, eget pulvinar neque pharetra ac int.
+            placerat placerat dolor.
+          </p>
+          <a class="close" href="#gallery">&times;</a>
+        </div>
+      </div>
+      <!-- //popup3 -->
+      <!-- popup-->
+      <div id="gal4" class="pop-overlay animate">
+        <div class="popup">
+          <img src="images/g4.jpg" alt="Popup Image" class="img-fluid" />
+          <p class="mt-4">
+            Nulla viverra pharetra se, eget pulvinar neque pharetra ac int.
+            placerat placerat dolor.
+          </p>
+          <a class="close" href="#gallery">&times;</a>
+        </div>
+      </div>
+      <!-- //popup -->
+      <!-- popup-->
+      <div id="gal5" class="pop-overlay animate">
+        <div class="popup">
+          <img src="images/g5.jpg" alt="Popup Image" class="img-fluid" />
+          <p class="mt-4">
+            Nulla viverra pharetra se, eget pulvinar neque pharetra ac int.
+            placerat placerat dolor.
+          </p>
+          <a class="close" href="#gallery">&times;</a>
+        </div>
+      </div>
+      <!-- //popup -->
+      <!-- popup-->
+      <div id="gal6" class="pop-overlay animate">
+        <div class="popup">
+          <img src="images/g6.jpg" alt="Popup Image" class="img-fluid" />
+          <p class="mt-4">
+            Nulla viverra pharetra se, eget pulvinar neque pharetra ac int.
+            placerat placerat dolor.
+          </p>
+          <a class="close" href="#gallery">&times;</a>
+        </div>
+      </div>
+      <!-- //popup -->
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section class="destinations py-5" id="destinations">
+    <div class="container py-md-5">
+      <h3 class="heading text-center mb-3 mb-sm-5">Tour Prices</h3>
+      <div class="row inner-sec-w3layouts-w3pvt-lauinfo">
+        <div
+          class="col-md-3 col-sm-6 col-6 destinations-grids text-center mb-4"
+        >
+          <h4 class="destination mb-3">Belgrade</h4>
+          <div class="image-position position-relative">
+            <img src="images/bg00a.jpg" class="img-fluid" alt="" />
+            <div class="rating">
+              <ul>
+                <li><span class="fa fa-usd"></span>100</li>
+              </ul>
+            </div>
+          </div>
+          <div class="destinations-info">
+            <div class="caption mb-lg-3">
+              <h4>Serbia</h4>
+              <a href="#contact">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-3 col-sm-6 col-6 destinations-grids text-center mb-4"
+        >
+          <h4 class="destination mb-3">Zagreb</h4>
+          <div class="image-position position-relative">
+            <img src="images/zagreb2.jpg" class="img-fluid" alt="" />
+            <div class="rating">
+              <ul>
+                <li><span class="fa fa-usd"></span> 100</li>
+              </ul>
+            </div>
+          </div>
+          <div class="destinations-info">
+            <div class="caption mb-lg-3">
+              <h4>Croatia</h4>
+              <a href="#contact">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-3 col-sm-6 col-6 destinations-grids text-center mb-4"
+        >
+          <h4 class="destination mb-3">ljubljana</h4>
+          <div class="image-position position-relative">
+            <img src="images/ljubljana.jpg" class="img-fluid" alt="" />
+            <div class="rating">
+              <ul>
+                <li><span class="fa fa-usd"></span>200</li>
+              </ul>
+            </div>
+          </div>
+          <div class="destinations-info">
+            <div class="caption mb-lg-3">
+              <h4>Slovenia</h4>
+              <a href="#contact">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-3 col-sm-6 col-6 destinations-grids text-center mb-4"
+        >
+          <h4 class="destination mb-3">skoplje</h4>
+          <div class="image-position position-relative">
+            <img src="images/skoplje.jpg" class="img-fluid" alt="" />
+            <div class="rating">
+              <ul>
+                <li><span class="fa fa-usd"></span>300</li>
+              </ul>
+            </div>
+          </div>
+          <div class="destinations-info">
+            <div class="caption mb-lg-3">
+              <h4>Macedonia</h4>
+              <a href="#contact">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials py-5" id="testimonials">
+    <div class="container py-md-5">
+      <h3 class="heading heading1 text-center mb-3 mb-sm-5">Client Reviews</h3>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 test-info text-left mb-4">
+          <p>
+            <span class="fa fa-quote-left"></span> "Faruk Travels made our dream
+            vacation a reality! Everything was perfectly planned. Highly
+            recommend!"
+            <span class="fa fa-quote-right"></span>
+          </p>
+          <div class="test-img text-right mb-3">
+            <img src="images/te1.jpg" class="img-fluid" alt="user-image" />
+          </div>
+          <h3 class="my-md-2 my-3 text-right">Amila Causevic</h3>
+        </div>
+        <div class="col-lg-4 col-sm-6 test-info text-left mb-4">
+          <p>
+            <span class="fa fa-quote-left"></span> "Booking with Faruk Travels
+            was so easy! Their team took care of all the details, and our trip
+            was stress-free and memorable."
+            <span class="fa fa-quote-right"></span>
+          </p>
+
+          <div class="test-img text-right mb-3">
+            <img src="images/te2.jpg" class="img-fluid" alt="user-image" />
+          </div>
+          <h3 class="my-md-2 my-3 text-right">Faris Isakovic</h3>
+        </div>
+        <div class="col-lg-4 col-sm-6 test-info text-left gap1 mb-4">
+          <p>
+            <span class="fa fa-quote-left"></span> "Great service and fantastic
+            deals! The staff was friendly and knowledgeable. Will definitely
+            book with them again!"
+            <span class="fa fa-quote-right"></span>
+          </p>
+          <div class="test-img text-right mb-3">
+            <img src="images/te3.jpg" class="img-fluid" alt="user-image" />
+          </div>
+          <h3 class="my-md-2 my-3 text-right">Amela Vatres</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <div class="map p-2">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.794198363223!2d18.309495076185513!3d43.818628071094714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758ca0f99d6bf3b%3A0x6f97362d8c61c461!2sInternational%20Burch%20University!5e0!3m2!1sbs!2sba!4v1742428603564!5m2!1sbs!2sba"
+      width="100%"
+      height="400"
+      frameborder="0"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+    >
+    </iframe>
+  </div>
+</section>
